@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:textStyle="bold"
+        android:gravity="start"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/name_text_view"
+        tools:text="David"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ce1919" />
+
+    <TextView
+        android:textStyle="italic"
+        android:gravity="start"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:text="0132616161"
+        android:id="@+id/phone_number_text_view"
+        android:layout_below="@+id/name_text_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#1c7097" />
+
+    <LinearLayout
+        android:id="@+id/button_list"
+        android:visibility="invisible"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/phone_number_text_view"
+        android:layout_toEndOf="@+id/phone_number_text_view"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp">
+
+        <ImageButton
+            android:src="@drawable/call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/call_button" />
+
+        <ImageButton
+            android:src="@drawable/sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sms_button" />
+
+        <ImageButton
+            android:src="@drawable/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/remove_button" />
+    </LinearLayout>
+
+
+</RelativeLayout>
